@@ -12,8 +12,7 @@ public class Login extends javax.swing.JFrame {
         initComponents();
         contraseñaUsuariotxt.setVisible(true);
         contraseñaVisualizadorTxt.setVisible(false);
-        claveVisible.setVisible(true);
-        claveNoVisible.setVisible(false);
+        
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -34,13 +33,12 @@ public class Login extends javax.swing.JFrame {
         jSeparator2 = new javax.swing.JSeparator();
         entrarBtn = new javax.swing.JPanel();
         entrarTxt = new javax.swing.JLabel();
-        cancelarBtn = new javax.swing.JPanel();
-        cancelarTxt = new javax.swing.JLabel();
+        salirBtn = new javax.swing.JPanel();
+        salirTxt = new javax.swing.JLabel();
         registroUsuarioBtn = new javax.swing.JPanel();
         registroUsuarioTxt = new javax.swing.JLabel();
         Fondologin = new javax.swing.JLabel();
         claveVisible = new javax.swing.JButton();
-        claveNoVisible = new javax.swing.JButton();
         contraseñaVisualizadorTxt = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -170,44 +168,44 @@ public class Login extends javax.swing.JFrame {
         entrarBtn.setLayout(entrarBtnLayout);
         entrarBtnLayout.setHorizontalGroup(
             entrarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(entrarTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(entrarTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
         );
         entrarBtnLayout.setVerticalGroup(
             entrarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(entrarTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(entrarTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
 
         jPanel1.add(entrarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 400, 90, 30));
 
-        cancelarBtn.setBackground(new java.awt.Color(27, 17, 88));
+        salirBtn.setBackground(new java.awt.Color(27, 17, 88));
 
-        cancelarTxt.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        cancelarTxt.setForeground(new java.awt.Color(255, 255, 255));
-        cancelarTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        cancelarTxt.setText("Cancelar");
-        cancelarTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        cancelarTxt.setPreferredSize(new java.awt.Dimension(55, 20));
-        cancelarTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+        salirTxt.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        salirTxt.setForeground(new java.awt.Color(255, 255, 255));
+        salirTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        salirTxt.setText("Salir");
+        salirTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        salirTxt.setPreferredSize(new java.awt.Dimension(55, 20));
+        salirTxt.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                cancelarTxtMouseEntered(evt);
+                salirTxtMouseEntered(evt);
             }
             public void mouseExited(java.awt.event.MouseEvent evt) {
-                cancelarTxtMouseExited(evt);
+                salirTxtMouseExited(evt);
             }
         });
 
-        javax.swing.GroupLayout cancelarBtnLayout = new javax.swing.GroupLayout(cancelarBtn);
-        cancelarBtn.setLayout(cancelarBtnLayout);
-        cancelarBtnLayout.setHorizontalGroup(
-            cancelarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cancelarTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
+        javax.swing.GroupLayout salirBtnLayout = new javax.swing.GroupLayout(salirBtn);
+        salirBtn.setLayout(salirBtnLayout);
+        salirBtnLayout.setHorizontalGroup(
+            salirBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(salirTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 90, Short.MAX_VALUE)
         );
-        cancelarBtnLayout.setVerticalGroup(
-            cancelarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(cancelarTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
+        salirBtnLayout.setVerticalGroup(
+            salirBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(salirTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
 
-        jPanel1.add(cancelarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 400, 90, 30));
+        jPanel1.add(salirBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 400, 90, 30));
 
         registroUsuarioBtn.setBackground(new java.awt.Color(255, 255, 255));
         registroUsuarioBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -259,16 +257,6 @@ public class Login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(claveVisible, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 300, 40, 30));
-
-        claveNoVisible.setBackground(new java.awt.Color(255, 255, 255));
-        claveNoVisible.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com.Imagenes\\ojoNoVisible.png")); // NOI18N
-        claveNoVisible.setBorder(null);
-        claveNoVisible.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                claveNoVisibleActionPerformed(evt);
-            }
-        });
-        jPanel1.add(claveNoVisible, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 300, 40, 30));
 
         contraseñaVisualizadorTxt.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         contraseñaVisualizadorTxt.setBorder(null);
@@ -327,13 +315,13 @@ public class Login extends javax.swing.JFrame {
         entrarBtn.setBackground(new Color(27,17,88));
     }//GEN-LAST:event_entrarTxtMouseExited
 
-    private void cancelarTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cancelarTxtMouseEntered
-        cancelarBtn.setBackground(new Color(52,29,182));
-    }//GEN-LAST:event_cancelarTxtMouseEntered
+    private void salirTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salirTxtMouseEntered
+        salirBtn.setBackground(new Color(52,29,182));
+    }//GEN-LAST:event_salirTxtMouseEntered
 
-    private void cancelarTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cancelarTxtMouseExited
-        cancelarBtn.setBackground(new Color(27,17,88));
-    }//GEN-LAST:event_cancelarTxtMouseExited
+    private void salirTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salirTxtMouseExited
+        salirBtn.setBackground(new Color(27,17,88));
+    }//GEN-LAST:event_salirTxtMouseExited
 
     private void contraseñaUsuariotxtMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_contraseñaUsuariotxtMousePressed
         if (nombreUsuariotxt.getText().isEmpty()){
@@ -391,12 +379,8 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_contraseñaVisualizadorTxtActionPerformed
 
-    private void claveNoVisibleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_claveNoVisibleActionPerformed
-
-    }//GEN-LAST:event_claveNoVisibleActionPerformed
-
     private void claveVisibleMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_claveVisibleMousePressed
-        claveVisible = claveNoVisible;
+
     }//GEN-LAST:event_claveVisibleMousePressed
 
     /**
@@ -436,11 +420,8 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Fondologin;
-    private javax.swing.JPanel cancelarBtn;
-    private javax.swing.JLabel cancelarTxt;
     private javax.swing.JPanel cerrarBtn;
     private javax.swing.JLabel cerrarTxt;
-    private javax.swing.JButton claveNoVisible;
     private javax.swing.JButton claveVisible;
     private javax.swing.JPasswordField contraseñaUsuariotxt;
     private javax.swing.JTextField contraseñaVisualizadorTxt;
@@ -458,5 +439,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JTextField nombreUsuariotxt;
     private javax.swing.JPanel registroUsuarioBtn;
     private javax.swing.JLabel registroUsuarioTxt;
+    private javax.swing.JPanel salirBtn;
+    private javax.swing.JLabel salirTxt;
     // End of variables declaration//GEN-END:variables
 }

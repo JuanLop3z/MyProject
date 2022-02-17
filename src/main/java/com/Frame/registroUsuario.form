@@ -166,7 +166,7 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\JuanSebastianLopezGa\Documents\NetBeansProjects\ProyectoInventario\src\main\java\com\Imagenes\whatsappIconoPeque&#xf1;o.png"/>
+              <Image iconType="2" name="C:\Users\User\Documents\NetBeansProjects\ProyectoInventario\src\main\java\com\Imagenes\whatsappIconoPeque&#xf1;o.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Nombre de la empresa"/>
           </Properties>
@@ -202,7 +202,7 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\JuanSebastianLopezGa\Documents\NetBeansProjects\ProyectoInventario\src\main\java\com\Imagenes\fondoLogin.jpg"/>
+              <Image iconType="2" name="C:\Users\User\Documents\NetBeansProjects\ProyectoInventario\src\main\java\com\Imagenes\fondoLogin.jpg"/>
             </Property>
           </Properties>
           <Constraints>
@@ -342,6 +342,7 @@
                 <Property name="text" type="java.lang.String" value="Cancelar"/>
               </Properties>
               <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="cancelarTxtMouseClicked"/>
                 <EventHandler event="mouseEntered" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="cancelarTxtMouseEntered"/>
                 <EventHandler event="mouseExited" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="cancelarTxtMouseExited"/>
               </Events>
@@ -390,7 +391,7 @@
           <Properties>
             <Property name="horizontalAlignment" type="int" value="2"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\JuanSebastianLopezGa\Documents\NetBeansProjects\ProyectoInventario\src\main\java\com\Imagenes\IconoBarra.png"/>
+              <Image iconType="2" name="C:\Users\User\Documents\NetBeansProjects\ProyectoInventario\src\main\java\com\Imagenes\IconoBarra.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Registro de Usuario-Inventario"/>
           </Properties>

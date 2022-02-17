@@ -10,10 +10,10 @@ import java.awt.Color;
  *
  * @author JuanSebastianLopezGa
  */
-public class salirLogin extends javax.swing.JFrame {
+public class ventanaSalir extends javax.swing.JFrame {
 
     int xMouse, yMouse;
-    public salirLogin() {
+    public ventanaSalir() {
         initComponents();
         setLocationRelativeTo(null);
     }
@@ -44,7 +44,7 @@ public class salirLogin extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\IconoBarra.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\IconoBarra.png")); // NOI18N
         jLabel1.setText("Inventario");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, -1, -1));
 
@@ -53,6 +53,9 @@ public class salirLogin extends javax.swing.JFrame {
         cancelarTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         cancelarTxt.setText("Cancelar");
         cancelarTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cancelarTxtMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 cancelarTxtMouseEntered(evt);
             }
@@ -66,8 +69,9 @@ public class salirLogin extends javax.swing.JFrame {
         cancelarBtnLayout.setHorizontalGroup(
             cancelarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cancelarBtnLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(cancelarTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap()
+                .addComponent(cancelarTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
+                .addContainerGap())
         );
         cancelarBtnLayout.setVerticalGroup(
             cancelarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -83,6 +87,9 @@ public class salirLogin extends javax.swing.JFrame {
         aceptarTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         aceptarTxt.setText("Aceptar");
         aceptarTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                aceptarTxtMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 aceptarTxtMouseEntered(evt);
             }
@@ -96,8 +103,8 @@ public class salirLogin extends javax.swing.JFrame {
         aceptarBtnLayout.setHorizontalGroup(
             aceptarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, aceptarBtnLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(aceptarTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap()
+                .addComponent(aceptarTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 68, Short.MAX_VALUE))
         );
         aceptarBtnLayout.setVerticalGroup(
             aceptarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -206,6 +213,14 @@ public class salirLogin extends javax.swing.JFrame {
         cancelarBtn.setBackground(new Color(255,255,255));
     }//GEN-LAST:event_cancelarTxtMouseExited
 
+    private void aceptarTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aceptarTxtMouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_aceptarTxtMouseClicked
+
+    private void cancelarTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cancelarTxtMouseClicked
+        this.dispose();
+    }//GEN-LAST:event_cancelarTxtMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -223,20 +238,21 @@ public class salirLogin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(salirLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaSalir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(salirLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaSalir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(salirLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaSalir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(salirLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(ventanaSalir.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new salirLogin().setVisible(true);
+                new ventanaSalir().setVisible(true);
             }
         });
     }

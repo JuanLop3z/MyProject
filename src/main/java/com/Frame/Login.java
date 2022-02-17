@@ -125,7 +125,7 @@ public class Login extends javax.swing.JFrame {
         jLabel7.setText("Su empresa");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 260, 90, 20));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\whatsappIconoGrande.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\whatsappIconoGrande.png")); // NOI18N
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 90, 130, 140));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -137,7 +137,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\whatsappIconoPequeño.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\whatsappIconoPequeño.png")); // NOI18N
         jLabel4.setText("Logo");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
 
@@ -246,11 +246,10 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.add(registroUsuarioBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 130, 20));
 
-        Fondologin.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\fondoLogin.jpg")); // NOI18N
+        Fondologin.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\fondoLogin.jpg")); // NOI18N
         jPanel1.add(Fondologin, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 0, 310, 470));
 
         claveVisible.setBackground(new java.awt.Color(255, 255, 255));
-        claveVisible.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\ojoVisible.png")); // NOI18N
         claveVisible.setBorder(null);
         claveVisible.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -273,7 +272,7 @@ public class Login extends javax.swing.JFrame {
         });
         jPanel1.add(contraseñaVisualizadorTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 310, 30));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\IconoBarra.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\IconoBarra.png")); // NOI18N
         jLabel2.setText("Iniciar sesion-Inventario");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
 
@@ -399,7 +398,8 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_registroUsuarioTxtMouseClicked
 
     private void salirTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salirTxtMouseClicked
-        
+        ventanaSalir ventanaSalir = new ventanaSalir();
+        ventanaSalir.setVisible(true);
     }//GEN-LAST:event_salirTxtMouseClicked
 
     /**

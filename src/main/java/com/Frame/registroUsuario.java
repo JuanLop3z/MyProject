@@ -107,7 +107,7 @@ public class registroUsuario extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\whatsappIconoPequeño.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\whatsappIconoPequeño.png")); // NOI18N
         jLabel6.setText("Nombre de la empresa");
         jPanel2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
 
@@ -127,7 +127,7 @@ public class registroUsuario extends javax.swing.JFrame {
         });
         jPanel2.add(usuarioCrearNombretxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 220, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\fondoLogin.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\fondoLogin.jpg")); // NOI18N
         jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 370, 60));
         jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 220, 10));
         jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 220, 10));
@@ -178,6 +178,9 @@ public class registroUsuario extends javax.swing.JFrame {
         cancelarTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         cancelarTxt.setText("Cancelar");
         cancelarTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cancelarTxtMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 cancelarTxtMouseEntered(evt);
             }
@@ -224,7 +227,7 @@ public class registroUsuario extends javax.swing.JFrame {
         jPanel2.add(contraseñaConfirmarTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 220, -1));
 
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\IconoBarra.png")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\IconoBarra.png")); // NOI18N
         jLabel7.setText("Registro de Usuario-Inventario");
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 0, 330, 40));
 
@@ -335,6 +338,11 @@ public class registroUsuario extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_contraseñaConfirmarTxtMousePressed
+
+    private void cancelarTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cancelarTxtMouseClicked
+        ventanaSalir ventanaSalir = new ventanaSalir();
+        ventanaSalir.setVisible(true);
+    }//GEN-LAST:event_cancelarTxtMouseClicked
 
     /**
      * @param args the command line arguments

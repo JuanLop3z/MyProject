@@ -12,7 +12,7 @@ public class Login extends javax.swing.JFrame {
         initComponents();
         contraseñaUsuariotxt.setVisible(true);
         contraseñaVisualizadorTxt.setVisible(false);
-        
+        setLocationRelativeTo(null);
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -40,12 +40,14 @@ public class Login extends javax.swing.JFrame {
         Fondologin = new javax.swing.JLabel();
         claveVisible = new javax.swing.JButton();
         contraseñaVisualizadorTxt = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(204, 204, 204)));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         cerrarBtn.setBackground(new java.awt.Color(255, 255, 255));
@@ -79,18 +81,16 @@ public class Login extends javax.swing.JFrame {
         cerrarBtn.setLayout(cerrarBtnLayout);
         cerrarBtnLayout.setHorizontalGroup(
             cerrarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(cerrarBtnLayout.createSequentialGroup()
-                .addComponent(cerrarTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(cerrarTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 20, Short.MAX_VALUE)
         );
         cerrarBtnLayout.setVerticalGroup(
             cerrarBtnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cerrarBtnLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(cerrarTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(cerrarTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel1.add(cerrarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 30, 30));
+        jPanel1.add(cerrarBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 20, 20));
 
         nombreUsuariotxt.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         nombreUsuariotxt.setForeground(new java.awt.Color(153, 153, 153));
@@ -125,7 +125,7 @@ public class Login extends javax.swing.JFrame {
         jLabel7.setText("Su empresa");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 260, 90, 20));
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com.Imagenes\\whatsappIconoGrande.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\whatsappIconoGrande.png")); // NOI18N
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 90, 130, 140));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -137,7 +137,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 190, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com.Imagenes\\whatsappIconoPequeño.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\whatsappIconoPequeño.png")); // NOI18N
         jLabel4.setText("Logo");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, -1, -1));
 
@@ -186,6 +186,9 @@ public class Login extends javax.swing.JFrame {
         salirTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         salirTxt.setPreferredSize(new java.awt.Dimension(55, 20));
         salirTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                salirTxtMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 salirTxtMouseEntered(evt);
             }
@@ -215,6 +218,9 @@ public class Login extends javax.swing.JFrame {
         registroUsuarioTxt.setText("Registra tu usuario");
         registroUsuarioTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         registroUsuarioTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                registroUsuarioTxtMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 registroUsuarioTxtMouseEntered(evt);
             }
@@ -240,11 +246,11 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1.add(registroUsuarioBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 130, 20));
 
-        Fondologin.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com.Imagenes\\fondoLogin.jpg")); // NOI18N
+        Fondologin.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\fondoLogin.jpg")); // NOI18N
         jPanel1.add(Fondologin, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 0, 310, 470));
 
         claveVisible.setBackground(new java.awt.Color(255, 255, 255));
-        claveVisible.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com.Imagenes\\ojoVisible.png")); // NOI18N
+        claveVisible.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\ojoVisible.png")); // NOI18N
         claveVisible.setBorder(null);
         claveVisible.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -266,6 +272,10 @@ public class Login extends javax.swing.JFrame {
             }
         });
         jPanel1.add(contraseñaVisualizadorTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 310, 30));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\JuanSebastianLopezGa\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\IconoBarra.png")); // NOI18N
+        jLabel2.setText("Iniciar sesion-Inventario");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -383,6 +393,15 @@ public class Login extends javax.swing.JFrame {
 
     }//GEN-LAST:event_claveVisibleMousePressed
 
+    private void registroUsuarioTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_registroUsuarioTxtMouseClicked
+        registroUsuario pf = new registroUsuario();
+        pf.setVisible(true);
+    }//GEN-LAST:event_registroUsuarioTxtMouseClicked
+
+    private void salirTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_salirTxtMouseClicked
+        
+    }//GEN-LAST:event_salirTxtMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -428,6 +447,7 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel entrarBtn;
     private javax.swing.JLabel entrarTxt;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;

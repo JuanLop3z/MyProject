@@ -247,6 +247,7 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(registroUsuarioBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 130, 20));
 
         Fondologin.setIcon(new javax.swing.ImageIcon("C:\\Users\\User\\Documents\\NetBeansProjects\\ProyectoInventario\\src\\main\\java\\com\\Imagenes\\fondoLogin.jpg")); // NOI18N
+        Fondologin.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jPanel1.add(Fondologin, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 0, 310, 470));
 
         claveVisible.setBackground(new java.awt.Color(255, 255, 255));
